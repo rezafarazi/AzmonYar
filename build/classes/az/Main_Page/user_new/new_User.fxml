@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="531.0" prefWidth="793.0" style="-fx-background-color: #102030;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="az.Main_Page.user_new.New_UserController">
+   <children>
+      <StackPane fx:id="dialog_pane" layoutY="-8.0" prefHeight="452.0" prefWidth="731.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-8.0">
+         <children>
+            <ImageView fitHeight="180.0" fitWidth="311.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/icon.png" />
+               </image>
+               <effect>
+                  <Lighting bumpInput="$null">
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </ImageView>
+         </children></StackPane>
+      <JFXButton layoutX="681.0" layoutY="409.0" onAction="#Edit_User" prefHeight="62.0" prefWidth="63.0" style="-fx-background-color: #c5db5a; -fx-text-fill: #FFF; -fx-cursor: hand; -fx-background-radius: 500px;" text="ویرایش">
+         <effect>
+            <Reflection />
+         </effect>
+      </JFXButton>
+      <JFXButton layoutX="64.0" layoutY="408.0" onAction="#Insert_User" prefHeight="62.0" prefWidth="63.0" style="-fx-background-color: #c5db5a; -fx-text-fill: #FFF; -fx-cursor: hand; -fx-background-radius: 500px;" text="جدید">
+         <effect>
+            <Reflection />
+         </effect>
+      </JFXButton>
+      <JFXTextField fx:id="Pass_Text" focusColor="#c5db5a" labelFloat="true" layoutX="144.0" layoutY="81.0" maxWidth="269.0" minWidth="500.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="269.0" promptText="رمز عبور" style="-fx-text-fill: #FFF;" unFocusColor="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="User_Text" focusColor="#c5db5a" labelFloat="true" layoutX="144.0" layoutY="22.0" maxWidth="269.0" minWidth="500.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="269.0" promptText="نام معلم" style="-fx-text-fill: #FFF;" unFocusColor="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXToggleButton fx:id="smt" layoutX="152.0" layoutY="130.0" onAction="#smt_chng" text="معلم" textFill="WHITE" toggleColor="#c5db5a" toggleLineColor="#d7e48b" />
+      <JFXComboBox fx:id="combo_all_cls" layoutX="278.0" layoutY="143.0" minWidth="300.0" nodeOrientation="RIGHT_TO_LEFT" promptText="کلاس" style="-fx-text-fill: #FFF;" />
+   </children>
+</AnchorPane>

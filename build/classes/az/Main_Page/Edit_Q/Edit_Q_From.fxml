@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="425.0" prefWidth="601.0" style="-fx-background-color: #102030;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="az.Main_Page.Edit_Q.Edit_Q_FromController">
+   <children>
+      <ImageView fitHeight="61.0" fitWidth="113.0" layoutX="477.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/icon.png" />
+         </image>
+         <effect>
+            <Reflection />
+         </effect>
+      </ImageView>
+      <JFXComboBox fx:id="combo_box_Edit" layoutX="112.0" layoutY="77.0" nodeOrientation="RIGHT_TO_LEFT" onAction="#chn" prefHeight="25.0" prefWidth="332.0" style="-fx-text-fill: #FFF;" />
+      <JFXTextField fx:id="text_one_edit" focusColor="#c5db5a" labelFloat="true" layoutX="28.0" layoutY="125.0" maxWidth="500.0" minWidth="500.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="500.0" promptText="گزینه اول" style="-fx-text-fill: #FFF;" />
+      <JFXTextField fx:id="text_two_edit" focusColor="#c5db5a" labelFloat="true" layoutX="28.0" layoutY="184.0" maxWidth="500.0" minWidth="500.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="500.0" promptText="گزینه دوم" style="-fx-text-fill: #FFF;" />
+      <JFXTextField fx:id="text_thr_edit" focusColor="#c5db5a" labelFloat="true" layoutX="28.0" layoutY="249.0" maxWidth="500.0" minWidth="500.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="500.0" promptText="گزینه سوم" style="-fx-text-fill: #FFF;" />
+      <JFXTextField fx:id="text_for_edit" focusColor="#c5db5a" labelFloat="true" layoutX="28.0" layoutY="308.0" maxWidth="500.0" minWidth="500.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="500.0" promptText="گزینه چهارم" style="-fx-text-fill: #FFF;" />
+      <JFXButton layoutX="264.0" layoutY="365.0" onAction="#edit_btn_click" prefHeight="31.0" prefWidth="67.0" style="-fx-background-color: #ea7915; -fx-cursor: hand;" text="ویرایش" textAlignment="CENTER" textFill="WHITE" />
+      <JFXRadioButton fx:id="radio_one_edit" layoutX="531.0" layoutY="132.0" text=" ">
+         <toggleGroup>
+            <ToggleGroup fx:id="sel" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="radio_two_edit" layoutX="531.0" layoutY="191.0" text=" " toggleGroup="$sel" />
+      <JFXRadioButton fx:id="radio_thr_edit" layoutX="531.0" layoutY="256.0" text=" " toggleGroup="$sel" />
+      <JFXRadioButton fx:id="radio_for_edit" layoutX="531.0" layoutY="315.0" text=" " toggleGroup="$sel" />
+      <JFXComboBox fx:id="cla_combo" layoutX="229.0" layoutY="34.0" nodeOrientation="RIGHT_TO_LEFT" onAction="#class_action_event_combo" prefHeight="25.0" prefWidth="215.0" promptText="نام کلاس" />
+   </children>
+</AnchorPane>

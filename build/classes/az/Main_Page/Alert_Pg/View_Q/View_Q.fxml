@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="484.0" prefWidth="705.0" style="-fx-background-color: #FFF;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="az.Main_Page.Alert_Pg.View_Q.View_QController">
+   <children>
+      <Text fx:id="text_Q" layoutX="10.0" layoutY="22.0" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="684.13671875">
+         <effect>
+            <Reflection />
+         </effect>
+      </Text>
+      <Text fx:id="text_ans_one" layoutX="14.0" layoutY="133.0" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="592.13671875" />
+      <Text fx:id="text_ans_two" layoutX="14.0" layoutY="192.0" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="592.13671875" />
+      <Text fx:id="text_ans_thr" layoutX="14.0" layoutY="255.0" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="592.13671875" />
+      <Text fx:id="text_ans_for" layoutX="14.0" layoutY="321.0" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="592.13671875" />
+      <JFXRadioButton fx:id="radio_one" disable="true" layoutX="631.0" layoutY="120.0" text=" " />
+      <JFXRadioButton fx:id="radio_two" disable="true" layoutX="631.0" layoutY="179.0" text=" " />
+      <JFXRadioButton fx:id="radio_thr" disable="true" layoutX="631.0" layoutY="242.0" text=" " />
+      <JFXRadioButton fx:id="radio_for" disable="true" layoutX="631.0" layoutY="308.0" text=" " />
+      <JFXButton layoutX="32.0" layoutY="417.0" onAction="#next_click" prefHeight="40.0" prefWidth="115.0" style="-fx-background-color: #102030; -fx-text-fill: #FFF; -fx-cursor: hand;" text="بعدی" />
+      <JFXButton layoutX="153.0" layoutY="417.0" onAction="#delete_click" prefHeight="40.0" prefWidth="115.0" style="-fx-background-color: #102030; -fx-text-fill: #FFF; -fx-cursor: hand;" text="حذف" />
+      <JFXButton layoutX="275.0" layoutY="417.0" onAction="#priv_click" prefHeight="40.0" prefWidth="115.0" style="-fx-background-color: #102030; -fx-text-fill: #FFF; -fx-cursor: hand;" text="قبلی" />
+   </children>
+</AnchorPane>

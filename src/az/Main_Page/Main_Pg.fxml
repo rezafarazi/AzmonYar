@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="617.0" prefWidth="1062.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="az.Main_Page.Main_PgController">
+   <children>
+      <Pane layoutX="900.0" prefHeight="618.0" prefWidth="192.0" style="-fx-background-color: #102030;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="147.0" fitWidth="192.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icon.png" />
+               </image>
+               <effect>
+                  <Reflection />
+               </effect>
+            </ImageView>
+            <JFXButton layoutX="-3.0" layoutY="199.0" onAction="#n_ques" prefHeight="40.0" prefWidth="192.0" text="تعریف سوالات جدید" textAlignment="CENTER" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXButton layoutX="3.0" layoutY="239.0" onAction="#Edit_Q_btn_Click" prefHeight="40.0" prefWidth="192.0" text="ویرایش سوالات" textAlignment="CENTER" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXButton layoutX="3.0" layoutY="279.0" onAction="#View_Questions" prefHeight="40.0" prefWidth="192.0" text="مشاهده سوالات" textAlignment="CENTER" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXButton layoutX="3.0" layoutY="319.0" onAction="#onclick_Nuser" prefHeight="40.0" prefWidth="192.0" text="تعریف کاربر جدید" textAlignment="CENTER" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXButton layoutX="3.0" layoutY="359.0" onAction="#Open_Class_Form" prefHeight="40.0" prefWidth="192.0" text="تعریف کلاس جدید" textAlignment="CENTER" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXButton layoutX="3.0" layoutY="399.0" onAction="#Chart_btn_on_Click" prefHeight="40.0" prefWidth="192.0" text="نمایش نمودار" textAlignment="CENTER" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXButton layoutX="3.0" layoutY="439.0" onAction="#exit_click" prefHeight="40.0" prefWidth="192.0" text="خروج" textAlignment="CENTER" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <Pane layoutX="3.0" layoutY="562.0" prefHeight="56.0" prefWidth="189.0" style="-fx-background-color: #091929;">
+               <children>
+                  <Label layoutX="52.0" layoutY="6.0" text="Copy right 2018" textFill="WHITE" />
+               </children>
+            </Pane>
+         </children>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX" height="69.41" radius="51.6025" width="139.0" />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

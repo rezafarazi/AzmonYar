@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="173.0" prefWidth="586.0" style="-fx-background-color: #FFF;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="az.Main_Page.Alert_Pg.Alert_For_VController">
+   <children>
+      <JFXComboBox fx:id="combo" layoutX="74.0" layoutY="49.0" prefHeight="25.0" prefWidth="264.0" />
+      <Text layoutX="401.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="انتخاب کلاس مورد نظر" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="267.0" layoutY="115.0" onAction="#ok_btn" prefHeight="31.0" prefWidth="86.0" style="-fx-background-color: #102030; -fx-text-fill: #FFF; -fx-cursor: hand;" text="انجام شد" />
+   </children>
+</AnchorPane>

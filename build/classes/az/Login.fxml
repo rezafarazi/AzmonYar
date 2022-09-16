@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="508.0" prefWidth="730.0" style="-fx-background-color: #102030;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="az.LoginController">
+   <children>
+      <ImageView fitHeight="234.0" fitWidth="498.0" layoutX="157.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/icon.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="190.0" layoutY="416.0" onAction="#login_click" prefHeight="39.0" prefWidth="117.0" style="-fx-background-color: #c5db5a;" text="ورود" textAlignment="CENTER" textFill="WHITE" />
+      <JFXButton layoutX="425.0" layoutY="416.0" onAction="#exit_click" prefHeight="39.0" prefWidth="117.0" style="-fx-background-color: #c5db5a;" text="خروج" textAlignment="CENTER" textFill="WHITE" />
+      <JFXTextField fx:id="user_text" focusColor="#c5db5a" labelFloat="true" layoutX="150.0" layoutY="235.0" maxWidth="431.0" minWidth="416.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="39.0" prefWidth="431.0" promptText="نام کاربری" style="-fx-text-fill: #FFF;" unFocusColor="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="pass_text" focusColor="#c5db5a" labelFloat="true" layoutX="150.0" layoutY="309.0" maxWidth="431.0" minWidth="431.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="39.0" prefWidth="431.0" promptText="رمز عبور" style="-fx-text-fill: #FFF;" unFocusColor="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXPasswordField>
+   </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="499.0" prefWidth="743.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="az.Main_Page.chart.Chart_FormController">
+   <children>
+      <Pane layoutX="586.0" prefHeight="499.0" prefWidth="157.0" style="-fx-background-color: #102030;">
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX" height="104.0" radius="60.25" width="139.0" />
+         </effect>
+         <children>
+            <ImageView fitHeight="118.0" fitWidth="157.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/icon.png" />
+               </image>
+               <effect>
+                  <Reflection />
+               </effect>
+            </ImageView>
+            <JFXButton layoutY="168.0" onAction="#on_click_class_btn" prefHeight="41.0" prefWidth="157.0" style="-fx-text-fill: #FFF; -fx-cursor: hand;" text="نمودار کلاس ها" />
+            <JFXButton layoutY="209.0" onAction="#st" prefHeight="41.0" prefWidth="157.0" style="-fx-text-fill: #FFF; -fx-cursor: hand;" text="نمودار دانش آموزان" />
+            <AnchorPane fx:id="pn" layoutY="281.0" prefHeight="165.0" prefWidth="157.0" visible="false">
+               <children>
+                  <JFXComboBox fx:id="combo_bx" layoutX="16.0" layoutY="27.0" prefHeight="25.0" prefWidth="126.0" />
+                  <JFXButton layoutX="34.0" layoutY="107.0" onAction="#clear_chart" style="-fx-text-fill: #FFF;" text="پاکسازی نمودار" />
+                  <JFXButton layoutX="60.0" layoutY="70.0" onAction="#done_btn" style="-fx-text-fill: #FFF;" text="تایید" />
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+      <BarChart fx:id="chart_control" layoutX="14.0" layoutY="14.0" prefHeight="468.0" prefWidth="555.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="804.0" style="-fx-background-color: #102030;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="az.Main_Page.classes_Form.Class_FormController">
+   <children>
+      <ImageView fitHeight="163.0" fitWidth="396.0" layoutX="257.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/icon.png" />
+         </image>
+         <effect>
+            <Reflection />
+         </effect>
+      </ImageView>
+      <StackPane fx:id="stack_pane" prefHeight="560.0" prefWidth="804.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <JFXTextField fx:id="cls_name" alignment="CENTER_RIGHT" focusColor="#c5db5a" labelFloat="true" layoutX="91.0" layoutY="37.0" maxWidth="317.0" minWidth="176.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="37.0" prefWidth="256.0" promptText="نام کلاس" style="-fx-text-fill: #FFF;" unFocusColor="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="stu_cnt" alignment="CENTER_RIGHT" focusColor="#c5db5a" labelFloat="true" layoutX="518.0" layoutY="37.0" maxWidth="317.0" minWidth="176.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="37.0" prefWidth="239.0" promptText="تعداد دانش آموز" style="-fx-text-fill: #FFF;" unFocusColor="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="291.0" layoutY="467.0" onAction="#insert_fun" prefHeight="57.0" prefWidth="56.0" style="-fx-background-color: #c5db5a; -fx-background-radius: 500px;" text="تایید" textFill="WHITE">
+         <effect>
+            <Reflection />
+         </effect></JFXButton>
+      <JFXButton layoutX="462.0" layoutY="467.0" onAction="#edit_fun" prefHeight="57.0" prefWidth="56.0" style="-fx-background-color: #c5db5a; -fx-background-radius: 500px;" text="ویرایش" textFill="WHITE">
+         <effect>
+            <Reflection />
+         </effect>
+      </JFXButton>
+      <JFXButton layoutX="378.0" layoutY="467.0" onAction="#delete_fun" prefHeight="57.0" prefWidth="56.0" style="-fx-background-color: #c5db5a; -fx-background-radius: 500px;" text="پاکسازی" textFill="WHITE">
+         <effect>
+            <Reflection />
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>

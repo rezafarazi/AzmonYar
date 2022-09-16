@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="585.0" prefWidth="935.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="az.Main_Page.new_Q.Q_newController">
+   <children>
+      <Pane prefHeight="71.0" prefWidth="941.0" style="-fx-background-color: #102030;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fitHeight="63.0" fitWidth="212.0" layoutX="14.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/icon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutY="71.0" prefHeight="518.0" prefWidth="941.0" style="-fx-background-color: #102030;">
+         <children>
+            <JFXComboBox fx:id="sel_class_com" layoutX="684.0" layoutY="62.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="27.0" prefWidth="198.0" promptText="انتخاب کلاس" />
+            <JFXTextField fx:id="time_q" focusColor="#c5db5a" labelFloat="true" layoutX="677.0" layoutY="114.0" maxWidth="212.0" minWidth="198.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="212.0" promptText="زمان امتحان به دقیقه" style="-fx-text-fill: #FFF;" unFocusColor="#1c3a40" />
+            <!--<JFXTextField fx:id="ID_Q" editable="false" focusColor="#c5db5a" labelFloat="true" layoutX="557.0" layoutY="222.0" maxWidth="212.0" minWidth="198.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="212.0" promptText="آیدی سوالات امتحان" style="-fx-text-fill: #FFF;" unFocusColor="#1c3a40" />
+            --><Pane layoutX="35.0" layoutY="18.0" prefHeight="486.0" prefWidth="570.0">
+               <children>
+                  <JFXTextField fx:id="ques" focusColor="#c5db5a" labelFloat="true" layoutX="13.0" layoutY="22.0" maxWidth="533.0" minWidth="533.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="27.0" prefWidth="533.0" promptText="سوال" style="-fx-text-fill: #FFF;" unFocusColor="#1c3a40" />
+                  <JFXTextField fx:id="ans_one" focusColor="#c5db5a" labelFloat="true" layoutX="14.0" layoutY="86.0" maxWidth="476.0" minWidth="476.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="476.0" promptText="جواب اول" style="-fx-text-fill: #FFF;" unFocusColor="#1c3a40" />
+                  <JFXTextField fx:id="ans_two" focusColor="#c5db5a" labelFloat="true" layoutX="14.0" layoutY="165.0" maxWidth="476.0" minWidth="476.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="476.0" promptText="جواب دوم" style="-fx-text-fill: #FFF;" unFocusColor="#1c3a40" />
+                  <JFXTextField fx:id="ans_thr" focusColor="#c5db5a" labelFloat="true" layoutX="14.0" layoutY="246.0" maxWidth="476.0" minWidth="476.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="476.0" promptText="جواب سوم" style="-fx-text-fill: #FFF;" unFocusColor="#1c3a40" />
+                  <JFXTextField fx:id="ans_for" focusColor="#c5db5a" labelFloat="true" layoutX="14.0" layoutY="340.0" maxWidth="476.0" minWidth="476.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="476.0" promptText="جواب چهارم" style="-fx-text-fill: #FFF;" unFocusColor="#1c3a40" />
+                  <JFXRadioButton fx:id="j_one" layoutX="490.0" layoutY="93.0" prefHeight="17.0" prefWidth="38.0" text=" " textAlignment="CENTER">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="selected_radio_btn" />
+                     </toggleGroup>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="j_two" layoutX="490.0" layoutY="172.0" prefHeight="17.0" prefWidth="38.0" text=" " textAlignment="CENTER" toggleGroup="$selected_radio_btn" />
+                  <JFXRadioButton fx:id="j_thr" layoutX="490.0" layoutY="253.0" prefHeight="17.0" prefWidth="38.0" text=" " textAlignment="CENTER" toggleGroup="$selected_radio_btn" />
+                  <JFXRadioButton fx:id="j_for" layoutX="490.0" layoutY="347.0" prefHeight="17.0" prefWidth="38.0" text=" " textAlignment="CENTER" toggleGroup="$selected_radio_btn" />
+                  <JFXToggleButton fx:id="toggle_btn" layoutX="34.0" layoutY="402.0" onAction="#toggle_btn_click" style="-fx-text-fill: #FFF;" text="چهارگزینه ای" toggleColor="#ea7915" toggleLineColor="#ffaa64" />
+                  <JFXButton fx:id="img_btn" buttonType="RAISED" layoutX="303.0" layoutY="415.0" onAction="#img_btn_click" prefHeight="31.0" prefWidth="171.0" style="-fx-background-color: ea7915;" text="عکس" textFill="WHITE" visible="false" />
+               </children>
+            </Pane>
+            <JFXButton buttonType="RAISED" layoutX="817.0" layoutY="350.0" onAction="#done_btn" prefHeight="63.0" prefWidth="65.0" style="-fx-background-color: #ea7915; -fx-background-radius: 500px;" text="انجام شد" textFill="WHITE" />
+            <JFXButton buttonType="RAISED" layoutX="697.0" layoutY="350.0" onAction="#on_new" prefHeight="63.0" prefWidth="65.0" style="-fx-background-color: #ea7915; -fx-background-radius: 500px;" text="جدید" textFill="WHITE" />
+            <JFXTextField fx:id="date_ques" focusColor="#c5db5a" labelFloat="true" layoutX="677.0" layoutY="228.0" maxWidth="212.0" minWidth="198.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="212.0" promptText="تاریخ امتحان" style="-fx-text-fill: #FFF;" unFocusColor="#1c3a40" />
+            <JFXDatePicker fx:id="start_qize" defaultColor="#ea7915" layoutX="682.0" layoutY="167.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="31.0" prefWidth="203.0" promptText="زمان شروع امتحان" showTime="true" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

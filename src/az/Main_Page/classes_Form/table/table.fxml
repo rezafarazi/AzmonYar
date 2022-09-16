@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="543.0" prefWidth="770.0" style="-fx-background-color: #102030;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="az.Main_Page.classes_Form.table.TableController">
+   <children>
+      <ImageView fitHeight="87.0" fitWidth="200.0" layoutX="308.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/icon.png" />
+         </image>
+         <effect>
+            <Reflection />
+         </effect>
+      </ImageView>
+      <TableView fx:id="table_view" layoutX="14.0" layoutY="233.0" prefHeight="296.0" prefWidth="733.0">
+        <columns>
+          <TableColumn fx:id="ID_col" prefWidth="75.0" text="ردیف" />
+          <TableColumn fx:id="Name_Col" prefWidth="75.0" text="نام کلاس" />
+            <TableColumn fx:id="Count_Col" prefWidth="75.0" text="تعداد" />
+            <TableColumn fx:id="Avg_Col" prefWidth="75.0" text="معدل کلاس" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <JFXTextField fx:id="class_room_name_edit" focusColor="#c5db5a" labelFloat="true" layoutX="69.0" layoutY="60.0" maxWidth="183.0" minWidth="183.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="183.0" promptText="نام کلاس" style="-fx-text-fill: #FFF;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="class_room_count_edit" focusColor="#c5db5a" labelFloat="true" layoutX="69.0" layoutY="114.0" maxWidth="183.0" minWidth="183.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="183.0" promptText="تعداد" style="-fx-text-fill: #FFF;" unFocusColor="WHITE" />
+      <JFXButton layoutX="94.0" layoutY="169.0" onAction="#edit_btn_click" prefHeight="31.0" prefWidth="67.0" ripplerFill="WHITE" style="-fx-background-color: C5DB5A;" text="ویرایش" textFill="WHITE" />
+      <JFXTextField fx:id="class_room_name_serch" focusColor="#c5db5a" labelFloat="true" layoutX="526.0" layoutY="60.0" maxWidth="183.0" minWidth="183.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="183.0" promptText="نام کلاس" style="-fx-text-fill: #FFF;" unFocusColor="WHITE" />
+      <JFXButton layoutX="571.0" layoutY="114.0" onAction="#serach_btn_click" prefHeight="31.0" prefWidth="93.0" ripplerFill="WHITE" style="-fx-background-color: C5DB5A;" text="جست و جو" textFill="WHITE" />
+      <JFXButton layoutX="172.0" layoutY="169.0" onAction="#delete_btn_click" prefHeight="31.0" prefWidth="67.0" ripplerFill="WHITE" style="-fx-background-color: C5DB5A;" text="حذف" textFill="WHITE" />
+   </children>
+</AnchorPane>
