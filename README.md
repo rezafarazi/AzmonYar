@@ -16,9 +16,11 @@ AzmonYar is a program that you can take 4-choice tests online. And finally see t
 ![maxresdefault](https://github.com/rezafarazi/AzmonYar/assets/45543047/e97ad563-d9a4-40cc-a46a-7c6d83ecd93c)
 
 
+# How to config Azmoon Yar network
 
 
 
+# Azmoon Yar images
 ### 1-AzmoonYar server login page
 ![Linux1](https://github.com/rezafarazi/AzmonYar/assets/45543047/5b4d6e67-6878-4a2b-81e6-f760f3d52b30)
 
