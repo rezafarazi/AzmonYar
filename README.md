@@ -7,17 +7,18 @@ AzmonYar is a program that you can take 4-choice tests online. And finally see t
 ![java-editorial-logo-free-download-free-vector](https://github.com/rezafarazi/AzmonYar/assets/45543047/48cd4f19-9b24-4021-bb24-094b386433cb)
 
 ### 2-Install Netbeans
-![netbeans-logo](https://github.com/rezafarazi/AzmonYar/assets/45543047/d10e7249-2c47-43d1-9ce1-4435e3acec70)
+<img width="1431" alt="dc532b56-3c08-4153-9596-95a4b7ab426d" src="https://github.com/rezafarazi/AzmonYar/assets/45543047/eed42a84-6b6e-48f9-8681-b05ac0aab723">
+
 
 ### 3-Install SceneBuilder
-![download](https://github.com/rezafarazi/AzmonYar/assets/45543047/bb8923a0-67e1-4f76-8178-5f812bf207e1)
+<img width="1431" alt="dc532b56-3c08-4153-9596-95a4b7ab426d" src="https://github.com/rezafarazi/AzmonYar/assets/45543047/f5d20aa3-8984-45a3-9db9-9cdcf4da258c">
 
 ### 4-Add Jphonix library
 ![maxresdefault](https://github.com/rezafarazi/AzmonYar/assets/45543047/e97ad563-d9a4-40cc-a46a-7c6d83ecd93c)
 
 
 # How to config Azmoon Yar network
-
+### Open AzmonYar/src/database/login/Socket_s/sock_fitch.java file and config by your network
 
 
 # Azmoon Yar images
