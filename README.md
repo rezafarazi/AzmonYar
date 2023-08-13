@@ -11,7 +11,8 @@ AzmonYar is a program that you can take 4-choice tests online. And finally see t
 
 
 ### 3-Install SceneBuilder
-<img width="1431" alt="dc532b56-3c08-4153-9596-95a4b7ab426d" src="https://github.com/rezafarazi/AzmonYar/assets/45543047/f5d20aa3-8984-45a3-9db9-9cdcf4da258c">
+![bk_imagemap_scenebuilder1](https://github.com/rezafarazi/AzmonYar/assets/45543047/7e4b1d9d-2cb1-42f7-a19d-56a632a5b1dd)
+
 
 ### 4-Add Jphonix library
 ![maxresdefault](https://github.com/rezafarazi/AzmonYar/assets/45543047/e97ad563-d9a4-40cc-a46a-7c6d83ecd93c)
